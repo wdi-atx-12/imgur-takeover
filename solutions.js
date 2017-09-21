@@ -1,5 +1,5 @@
 console.log('Defining functions!');
 
-function yourFunction() {
-  // do some stuff
-}
+function changeNavColor() {
+  // change the navbar to a different color
+};
