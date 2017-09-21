@@ -6,8 +6,6 @@ Tonight's training involves taking over [imgur.com](https://imgur.com/) with jav
 
 ### The Tasks
 - Create a function that changes the navbar to a different color.
-  > Hint: This could be called changeNavColor();
-
 - Add a new `<h1>` to the top of the page that says `<h1>This page is now under *YOUR NAME*'s control!'</h1>`.
 - *Remove* half of the images (from the DOM) and *hide* half of the remainder (CSS display property).
 - Create a function that prompts the user to type "please" after clicking an image in order to see it larger.
@@ -17,7 +15,7 @@ Tonight's training involves taking over [imgur.com](https://imgur.com/) with jav
 - On the Home page, change random image links to point to a YouTube video instead of their intended destination.
 - On the Details page, create a function that will randomly click either "upvote" or "downvote".
 - On the Details page, hide all comments under the image that are below a given points threshold.
-> Example: Hide all comments that are < 2,000 points
+  > Example: Hide all comments that are < 2,000 points
 
 
 ## Licensing
