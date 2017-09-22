@@ -32,7 +32,6 @@ function alertAfterImgClick() {
   selectImgs.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      var getTagname = e.target.parentNode.tagName.toLowerCase();
       var getAttr = e.target.parentNode.getAttribute('href');
       
       var promptUser = prompt("Type \'please\' to see this image.").toLowerCase();
