@@ -14,6 +14,33 @@ function hijackHeading() {
   getTopbar().appendChild(heading);
 }
 
+function cullImages() {
+  let images = [...document.querySelectorAll('.post')];
+  let removeCount = Math.round(images.length/2);
+  let hideCount = Math.round(removeCount/2)
+
+  // removing half
+  for(let i = 0; i < images.length/2; i++) {
+    images[i].parentNode.removeChild(images[i]);
+  }
+
+  for(let i = 0; i < images.length/4; i++) {
+    images[images.length-1-i].style.visibility = 'hidden';
+  }
+}
+
+function politeImageLinks() {
+  let imageLinks = [...document.querySelectorAll('.image-list-link')];
+  imageLinks.forEach(a => {
+    a.addEventListener('click', function sayPlease(e) {
+      e.preventDefault();
+      let answer = prompt('Say please! ');
+      if(answer.toLowerCase() === 'please') {
+        window.open(this.getAttribute('href'));
+      }
+    });
+  });
+}
 
 //
 // helper functions
@@ -21,7 +48,7 @@ function hijackHeading() {
 
 // returns random integer from 0 to n-1
 function rng(n) {
-  Math.floor(Math.random()*n);
+  return Math.floor(Math.random()*n);
 }
 
 function randomRGB() {
